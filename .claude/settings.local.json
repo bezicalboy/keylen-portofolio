@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(node -e \"global.window={};require\\('./config.js'\\);console.log\\('config OK -', window.PORTFOLIO?'parsed':'FAILED'\\)\")",
+      "Bash(node --check app.js)",
+      "Bash(node *)",
+      "Bash(git mv *)",
+      "Bash(npm install *)",
+      "Bash(npm run *)"
+    ]
+  }
+}

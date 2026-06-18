@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <!-- grain overlay -->
+  <div class="grain" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <nav class="nav">
+      <a href="#top" class="nav__mark" id="navMark">·</a>
+      <div class="nav__links">
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <p class="hero__role" id="heroRole"></p>
+      <h1 class="hero__name" id="heroName"></h1>
+      <p class="hero__tagline" id="heroTagline"></p>
+      <a href="#work" class="hero__scroll">scroll ↓</a>
+    </section>
+
+    <section class="work" id="work">
+      <div class="section-head">
+        <span class="section-head__num">01</span>
+        <h2>Selected Work</h2>
+      </div>
+      <div class="gallery" id="gallery"></div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="section-head">
+        <span class="section-head__num">02</span>
+        <h2>About</h2>
+      </div>
+      <div class="about__body">
+        <p id="aboutTagline"></p>
+        <p class="about__meta">
+          Based in <span id="aboutLocation"></span>. Available for commissions,
+          editorial work, and gallery showings.
+        </p>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="section-head">
+        <span class="section-head__num">03</span>
+        <h2>Get in touch</h2>
+      </div>
+      <a href="#" class="contact__email" id="contactEmail"></a>
+      <ul class="contact__socials" id="contactSocials"></ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span id="footerName"></span>
+    <span>© <span id="footerYear"></span></span>
+  </footer>
+
+  <!-- lightbox -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox__close" id="lbClose" aria-label="Close">✕</button>
+    <button class="lightbox__nav lightbox__nav--prev" id="lbPrev" aria-label="Previous">‹</button>
+    <figure class="lightbox__figure">
+      <img id="lbImg" src="" alt="" />
+      <figcaption id="lbCaption"></figcaption>
+    </figure>
+    <button class="lightbox__nav lightbox__nav--next" id="lbNext" aria-label="Next">›</button>
+  </div>
+
+  <script type="module" src="/app.js"></script>
+</body>
+</html>
