@@ -70,7 +70,7 @@ export const PORTFOLIO = {
     {
       image: "images/6.jpg",
       title: "Potrait Drawing",
-      medium: "Conté crayon",
+      medium: "Pencil",
       year: "2024",
     },
   ],
